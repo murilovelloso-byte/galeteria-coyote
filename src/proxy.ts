@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  const isAdmin = pathname.startsWith("/admin") && !pathname.startsWith("/admin/login");
+  const isAdmin =
+    pathname.startsWith("/admin") && !pathname.startsWith("/admin/login");
   const isAdminApi =
-    pathname.startsWith("/api/admin") && !pathname.startsWith("/api/admin/login");
+    pathname.startsWith("/api/admin") &&
+    !pathname.startsWith("/api/admin/login");
 
   const cookie = req.cookies.get("coyote_admin_session");
   const autenticado = cookie?.value === "authenticated";
