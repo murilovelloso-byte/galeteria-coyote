@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ObrigadoPage() {
   const router = useRouter();
@@ -14,12 +15,16 @@ export default function ObrigadoPage() {
       }}
     >
       <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center">
-        {/* Animação de sucesso */}
-        <div
-          className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg"
-          style={{ background: "linear-gradient(135deg, #FFD700, #e6b800)" }}
-        >
-          <span className="text-4xl">🎉</span>
+        {/* Logo */}
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/logo.jpg"
+            alt="Galeteria Coyote"
+            width={100}
+            height={100}
+            className="rounded-full shadow-lg"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
         </div>
 
         <h1 className="text-2xl font-black text-gray-900 mb-3">

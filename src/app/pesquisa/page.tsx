@@ -2,6 +2,7 @@
 
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 const TOTAL_PERGUNTAS = 6;
 
@@ -140,21 +141,15 @@ function SurveyContent() {
     >
       {/* Header */}
       <div className="flex flex-col items-center mb-6">
-        <div
-          className="w-14 h-14 rounded-full flex items-center justify-center mb-2 shadow-lg"
-          style={{
-            background: "linear-gradient(135deg, #FFD700, #e6b800)",
-            border: "3px solid #1a1a1a",
-          }}
-        >
-          <span className="text-2xl">🐺</span>
-        </div>
-        <span
-          className="text-sm font-black text-white"
-          style={{ color: "#FFD700" }}
-        >
-          GALETERIA COYOTE
-        </span>
+        <Image
+          src="/logo.jpg"
+          alt="Galeteria Coyote"
+          width={80}
+          height={80}
+          className="rounded-full shadow-lg mb-1"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          priority
+        />
       </div>
 
       {/* Card */}

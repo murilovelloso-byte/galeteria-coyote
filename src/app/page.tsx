@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import Image from "next/image";
 
 function HomeContent() {
   const router = useRouter();
@@ -17,24 +18,16 @@ function HomeContent() {
       }}
     >
       {/* Logo */}
-      <div className="flex flex-col items-center mb-8">
-        <div
-          className="w-24 h-24 rounded-full flex items-center justify-center mb-4 shadow-2xl"
-          style={{
-            background: "linear-gradient(135deg, #FFD700, #e6b800)",
-            border: "4px solid #1a1a1a",
-          }}
-        >
-          <span className="text-5xl">🐺</span>
-        </div>
-        <h1
-          className="text-3xl font-black text-white tracking-tight text-center"
-          style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
-        >
-          GALETERIA
-          <br />
-          <span style={{ color: "#FFD700" }}>COYOTE</span>
-        </h1>
+      <div className="flex flex-col items-center mb-6">
+        <Image
+          src="/logo.jpg"
+          alt="Galeteria Coyote"
+          width={160}
+          height={160}
+          className="rounded-full shadow-2xl"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          priority
+        />
       </div>
 
       {/* Card */}
