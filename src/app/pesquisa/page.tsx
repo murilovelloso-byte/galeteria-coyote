@@ -142,7 +142,7 @@ function SurveyContent() {
       {/* Header */}
       <div className="flex flex-col items-center mb-6">
         <Image
-          src="/logo-transparente.png"
+          src="/logo-final.png"
           alt="Galeteria Coyote"
           width={160}
           height={160}

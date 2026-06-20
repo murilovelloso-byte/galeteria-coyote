@@ -18,7 +18,7 @@ export default function ObrigadoPage() {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <Image
-            src="/logo-transparente.png"
+            src="/logo-final.png"
             alt="Galeteria Coyote"
             width={160}
             height={160}
