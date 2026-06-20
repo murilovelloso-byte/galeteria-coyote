@@ -20,12 +20,10 @@ function HomeContent() {
       {/* Logo */}
       <div className="flex flex-col items-center mb-6">
         <Image
-          src="/logo.jpg"
+          src="/logo-transparente.png"
           alt="Galeteria Coyote"
           width={160}
           height={160}
-          className="rounded-full shadow-2xl"
-          style={{ objectFit: "cover", objectPosition: "center" }}
           priority
         />
       </div>
@@ -45,7 +43,7 @@ function HomeContent() {
         </p>
 
         <button
-          onClick={() => router.push(`/pesquisa?origem=${origem}`)}
+          onClick={() => router.push(`/pesquisa${origem !== "direto" ? `?origem=${origem}` : ""}`)}
           className="w-full py-4 rounded-2xl font-bold text-white text-lg shadow-lg active:scale-95 transition-transform cursor-pointer"
           style={{ background: "linear-gradient(135deg, #CC0000, #990000)" }}
         >

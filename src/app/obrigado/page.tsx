@@ -18,12 +18,10 @@ export default function ObrigadoPage() {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <Image
-            src="/logo.jpg"
+            src="/logo-transparente.png"
             alt="Galeteria Coyote"
-            width={100}
-            height={100}
-            className="rounded-full shadow-lg"
-            style={{ objectFit: "cover", objectPosition: "center" }}
+            width={160}
+            height={160}
           />
         </div>
 

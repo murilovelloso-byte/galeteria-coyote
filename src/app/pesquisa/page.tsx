@@ -142,12 +142,10 @@ function SurveyContent() {
       {/* Header */}
       <div className="flex flex-col items-center mb-6">
         <Image
-          src="/logo.jpg"
+          src="/logo-transparente.png"
           alt="Galeteria Coyote"
-          width={80}
-          height={80}
-          className="rounded-full shadow-lg mb-1"
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          width={160}
+          height={160}
           priority
         />
       </div>
