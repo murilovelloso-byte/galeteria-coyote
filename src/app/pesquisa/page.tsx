@@ -144,8 +144,8 @@ function SurveyContent() {
         <Image
           src="/logo-final.png"
           alt="Galeteria Coyote"
-          width={160}
-          height={160}
+          width={320}
+          height={320}
           priority
         />
       </div>
