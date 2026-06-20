@@ -47,8 +47,8 @@ export default function LoginPage() {
             <Image
               src="/logo-final.png"
               alt="Galeteria Coyote"
-              width={120}
-              height={120}
+              width={240}
+              height={240}
             />
           </div>
           <h1 className="text-xl font-black text-gray-900">Painel Administrativo</h1>
